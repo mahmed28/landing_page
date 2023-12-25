@@ -4,6 +4,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
 }
 
 .links ul {
@@ -17,7 +18,7 @@ body {
 
 .links a {
     text-decoration: none;
-    color: #e5e7eb99;
+    color: white;
 }
 
 .header {
@@ -37,7 +38,7 @@ body {
 .header,
 .top,
 .footer {
-    background-color: #1F2937;
+    background-color: rgba(214, 4, 4, 0.846);
 }
 
 .body {
@@ -60,12 +61,32 @@ body {
 }
 
 .bottom {
-    background-color: #E5E7EB;
+    background-color: blue;
+    flex-direction: column;
+    padding: 50px 300px;
+    color: white;
+
+}
+
+.quote {
+    display: flex;
+    font-style: italic;
+    font-size: 36px;
+}
+
+.author {
+    display:flex;
+    font-weight: 600;
+    font-size: 16px;
+    justify-content: flex-end;
 }
 
 .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px 0px;
 
 }
 
@@ -79,18 +100,87 @@ body {
 }
 
 .display {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #3882F6;
-    border-radius: 10px;
+    border: 2px solid red;
+    border-radius: 8px;
     flex-basis: 100px;
     text-align: center;
+    flex-wrap: wrap;
+    padding: 2px;
 }
 
-.middle-info {
+.middle-title {
     display: flex;
     justify-content: center;
-    font-weight: 300;
+    font-weight: 350;
     font-size: 36px;
-    color: #1f2937;
+    color: blue;
+    font-family: fantasy;
+    margin-top: 16px;
+}
+
+.display img{
+    width: auto;
+    height:200px;
+}
+
+#miles {
+    border: 2px solid rgb(30, 29, 29);
+}
+#gwen {
+    border: 2px solid purple;
+}
+#hulk {
+    border: 2px solid green;
+}
+
+.sign-up {
+    margin: 50px 250px;
+    background-color: red;
+    justify-content: space-between;
+    padding: 20px 60px;
+    border-radius: 8px;
+}
+
+.sign-up-text {
+    color: white;
+}
+
+.sign-up-button { 
+    color: white;
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.top {
+    padding: 50px 250px;
+    justify-content: space-between;
+    color: white;
+}
+
+.top-title {
+    font-weight: 600;
+    font-size: 48px;
+
+}
+
+.top-text {
+    font-size: 18px;
+}
+
+.top-button {
+    background-color: blue;
+    border-radius: 8px;
+    border: 2px solid white;
+    padding: 5px;
+}
+
+.top-image {
+    display: flex;
+}
+
+.top-image img{
+    height: auto;
+    width: 350px;
 }
